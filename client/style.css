@@ -1,0 +1,12 @@
+/* h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+} */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
