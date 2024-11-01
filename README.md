@@ -24,3 +24,7 @@
 ---
 
 ### Condition
+
+- Condition (if) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/09-1.condition.js)
+- Condition (논리 연산자) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/09-2.condition.js)
+- Condition (switch, case) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/09-3.condition.js)
