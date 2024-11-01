@@ -18,6 +18,8 @@ let single = 'single quote';
 let backtick = `Backtick`;
 console.log(double, single, backtick);
 
+const str = new String('hello'); // string constructor fuction
+
 // 4. 정수, 부동 소수점 숫자(길이 제약)
 const n = 123;
 const m = 12.345;
@@ -41,7 +43,8 @@ console.log(obj);
 
 // 8. 고유한 식별자(unique identifier)
 const uuid = Symbol('uuid');
-console.log(typeof Symbol);
+const uuid2 = Symbol('uuid');
+console.log(uuid == uuid2);
 
 /* typeof 연산자의 2가지 사용법 ---------------------------------------------- */
 
@@ -50,14 +53,58 @@ console.log(typeof Symbol);
 
 // 언어 상, 오류
 
+// 객체 메서드를 정의하는 방법
+// 1. normal function 지양
+// 2. arrow function : this를 바인딩하지 않는다(상위 컨텍스트에서 찾음), 메서드 안에서 함수를 정의힐 때 권장
+// 3. concise method : 자주 사용, 권장
 
-
+const user = {
+  name: 'bzzang',
+  age: 29,
+  sayHi:function(){
+    console.log(this);
+  },
+  sayHi2:()=> {
+    console.log(this);
+  },
+  sayHi3(){
+    function sayBye() {
+      console.log(this);
+    }
+    sayBye(); // 누구의 의해 호출 됐는지 모름 그래서 window가 나옴
+  },
+  sayHi4(){
+    const sayBye = () => {
+      console.log(this.age = 30);
+    }
+    sayBye();  // 객체의 메서드를 정의할 때 권장
+  }
+}
 
 // Object
+function User(){
+  this.payment = false;
+  this.age = 25
+}
+
+const _a = new User();
+const _a2 = new User();
+const _a3 = new User();
+const _a4 = new User();
 
 // Array
+const arr = ['a', {name:'bz'}, ()=>{},4,5];
+console.log(arr);
+
+const newArray = new Array(10);
+console.log(newArray);
 
 // function
+function sum(a,b) {
+  return a + b;
+}
+const result = sum(10,5);
+console.log(result);
 
 // this
 
