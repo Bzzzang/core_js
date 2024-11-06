@@ -37,3 +37,11 @@
 - Loop (Do While) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/10-2.loop.js)
 - Loop (For) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/10-3.loop.js)
 - Loop (For In) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/10-4.loop.js)
+- Loop (For of) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/10-5.loop.js)
+
+---
+
+### Function
+- Function (함수 선언문) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/11-1.function.js)
+- Function (함수 표현식) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/11-2.function.js)
+- Function (화살표 함수) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/11-3.function.js)
