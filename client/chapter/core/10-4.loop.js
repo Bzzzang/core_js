@@ -26,4 +26,19 @@ console.log(Object.hasOwn(javaScript, 'nickname'));
 
 // for ~ in 문
 // - 객체 자신의 속성만 순환하려면?
+for (const key in javaScript) {
+  if (Object.hasOwn(javaScript,key)) {
+    const value = javaScript[key];
+    console.log(value);
+  }
+}
+
 // - 배열 객체 순환에 사용할 경우?
+// 배열도 for ~ in 문으로 순환이 가능은 하다.
+// for ~ in 은 객체애 양보
+// 배열은 순서에 굉장히 민감 => for ~ in은 순서 보장 X
+const tens = [10,100,1000,10000];
+
+for (const key in tens) {
+  console.log(tens[key]);
+}
