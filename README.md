@@ -45,3 +45,26 @@
 - Function (함수 선언문) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/11-1.function.js)
 - Function (함수 표현식) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/11-2.function.js)
 - Function (화살표 함수) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/11-3.function.js)
+- Function (재귀) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/11-4.function.js)
+
+---
+
+### Object
+- Object (객체) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/12-1.object.js)
+- Object (참조에 의한 객체 복사) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/12-2.object.js)
+- Object (가비지 컬렉션) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/12-3.object.js)
+
+- Object (메서드와 this) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/12-4.object.js)
+
+---
+
+### Prototype
+- Prototype (상속) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/13-1.prototype.js)
+- Prototype (프로퍼티) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/13-2.prototype.js)
+- Prototype (todo) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/13-3.prototype.js)
+
+---
+
+### Class
+- Class (클래스) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/14-1.closure.js)
+- Class (클로저) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/14-2.closure.js)
