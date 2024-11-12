@@ -67,4 +67,19 @@
 
 ### Class
 - Class (클래스) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/14-1.closure.js)
-- Class (클로저) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/14-2.closure.js)
+- Closure (클로저) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/14-2.closure.js)
+
+---
+
+### OptionalChaining & wrapper
+- Optional Chaining [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/15.optional.js)
+
+---
+
+### Primitives Method
+- Primitives Method (Object Wrapper) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/16.primitivesMethod.js)
+
+---
+
+### Number
+- Number Type [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/17.number.js)
