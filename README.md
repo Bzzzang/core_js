@@ -82,4 +82,26 @@
 ---
 
 ### Number
-- Number Type [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/17.number.js)
+- Number Type [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/17-1.number.js)
+- Math Object [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/17-2.number.js)
+
+---
+
+### String
+- String Type [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/18.string.js)
+
+---
+
+### Array
+- Array (array Type) [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/19.array.js)
+- ArrayMethod [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/20.array.js)
+
+---
+
+### Iterator protocol
+- Try ...Catch [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/21.iterableObject.js)
+
+---
+
+### 예외 처리
+- Try ...Catch [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/22.tryCatch.js)
