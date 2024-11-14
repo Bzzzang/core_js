@@ -99,7 +99,7 @@
 ---
 
 ### Iterator protocol
-- Try ...Catch [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/21.iterableObject.js)
+- Iterator protocol [바로가기](https://github.com/Bzzzang/core_js/blob/01.core/client/chapter/core/21.iterableObject.js)
 
 ---
 
