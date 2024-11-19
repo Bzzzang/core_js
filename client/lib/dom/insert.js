@@ -1,19 +1,31 @@
-function insertLast(node, text){
+import { isString } from '../utils/type.js';
+import { getNode } from "./getNode.js";
+
+export function insertBefore(node,text){
+
   if(isString(node)) node = getNode(node);
-  node.insertAdjacentHTML('beforeend', text);
+  node.insertAdjacentHTML('beforebegin',text);
+
 }
 
-function insertBefore(node, text){
+export function insertFirst(node,text){
+
   if(isString(node)) node = getNode(node);
-  node.insertAdjacentHTML('beforebegin', text);
+  node.insertAdjacentHTML('afterbegin',text);
+
 }
 
-function insertFirst(node, text){
+export function insertLast(node,text){
+
   if(isString(node)) node = getNode(node);
-  node.insertAdjacentHTML('afterbegin', text);
+  node.insertAdjacentHTML('beforeend',text);
+
 }
 
-function insertAfter(node, text){
+export function insertAfter(node,text){
+
   if(isString(node)) node = getNode(node);
-  node.insertAdjacentHTML('afterend', text);
+  node.insertAdjacentHTML('afterend',text);
+
 }
+

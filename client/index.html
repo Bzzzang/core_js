@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
   <head>
+    <title>범쌤과 함께 배우는 core javascript</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>범쌤과 함께 배우는 core javascript</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
-
+    
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="./lib/error/typeError.js" defer></script>
-    <script src="./lib/error/syntaxError.js" defer></script>
-    <script src="./lib/error/refError.js" defer></script>
-    <script src="./lib/utils/type.js" defer></script>
-    <script src="./lib/dom/getNode.js" defer></script>
-    <script src="./lib/dom/css.js" defer></script>
-    <script src="./lib/dom/insert.js"></script>
-    <script src="./lib/dom/attr.js"></script>
-    <script src="./chapter/dom/01.BOM.js" defer></script>
+    
+    <script src="./main.js" type="module"></script> 
+    
   </head>
-    <nav>
-      <ul>
-        <li class="about" data-name="about">
-          ⭐️
-          <span>ABOUT</span>
-        </li>
-        <li class="home" data-name="home">
-          🏠
-          <span>HOME</span>
-        </li>
-        <li class="contact" data-name="contact">
-          📞
-          <span>CONTACT</span>
-        </li>
-      </ul>
-    </nav>
+  <body>
 
-    <div class="ground">
-      <div class="ball"><img src="https://en.js.cx/clipart/ball.svg" alt="축구공" />></div>
-    </div>
 
-    <input type="text">
+    <form class="calculator">
+      <div class="first">
+        <label for="firstNumber">First Value</label>
+        <input type="number" name="first" id="firstNumber" required/>
+      </div>
+      
+      <div class="operator"> 
+       +
+      </div>
+      
+      <div class="second">
+        <label for="secondNumber">Second Value</label>
+        <input type="number" name="second" id="secondNumber" required/>
+      </div>
+    
+      <input id="clear" type="submit" value="clear"/>
+  
+      <div class="result">
+        -
+      </div>
+  
+    </form>
+
+
+
   </body>
 </html>
+
