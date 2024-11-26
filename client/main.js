@@ -1,43 +1,16 @@
-// console.log(temp.content.cloneNode(true));
+
+import {Button} from "./components/Button/Button.js"
 
 
+const app = document.getElementById('app');
 
-class MyElement extends HTMLElement {
-
-  constructor(){
-    super();
-
-    this.attachShadow({mode:'open'});
-    this._render();
-    this.card = this.shadowRoot.querySelector('.card')
-  }
-
-  connectedCallback(){
-    this.card.addEventListener('click',this.handleClick.bind(this))
-  }
-
-  handleClick(){
-    console.log(this.getAttribute('data-name'));
-  }
-
-  _render(){
-      this.shadowRoot.innerHTML = `
-      
-        <style>
-        @import url('./style.css'); 
-        </style>
-
-        
-        <div class="card">
-          <slot name="title">Default Title</slot>
-          <slot name="content">Default Contents</slot>
-          <slot></slot>
-        </div>
-    `
-  }
-
+function defineElements(){
+  customElements.define('custom-button',Button)
 }
 
+defineElements()
 
+const buttonElement = document.createElement('custom-button');
 
-customElements.define('my-element',MyElement);
+app.append(buttonElement);
+
