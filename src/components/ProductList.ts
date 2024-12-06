@@ -1,7 +1,7 @@
 import { LitElement, html, css, CSSResultGroup } from "lit";
-import { customElement, property } from "lit/decorators.js";
+import { customElement, property, state } from "lit/decorators.js";
 import resetCSS from "../Layout/resetCSS";
-import { Product } from "../@types/type";
+import { Auth, Product } from "../@types/type";
 import { getPbImageURL } from "../api/getPbImageURL";
 import gsap from "gsap";
 
@@ -14,6 +14,8 @@ class ProductList extends LitElement {
     totalItems:0,
     totalPages:0
   };
+  
+  @state() loginData = {} as Auth
 
   static styles: CSSResultGroup = [
     resetCSS,
@@ -63,6 +65,17 @@ class ProductList extends LitElement {
           }
         }
       }
+
+      .new-post{
+        padding: 0.5rem 1rem;
+        background-color: pink;
+        color: #242424;
+        border-radius: 20px;
+        position: fixed;
+        transform: translateX(-50%);
+        left:50%;
+        bottom: 2rem;
+      }
     `,
   ];
 
@@ -78,6 +91,10 @@ class ProductList extends LitElement {
 
     const data = await response.json();
     this.data = data;
+
+    this.loginData = JSON.parse(localStorage.getItem('auth') ?? "{}");
+
+    
   }
 
   updated(changedProperties: Map<string|number|symbol,unknown>):void{ 
@@ -96,13 +113,20 @@ class ProductList extends LitElement {
   }
 
   render() {
+
+    const {isAuth} = this.loginData;
+    
     return html`
       <div class="container">
         <ul>
         ${
           this.data.items.map((item)=> html`
           <li class="product-item">
-            <a href="/">
+            <a href="${
+              isAuth
+              ? `/src/pages/detail/index.html?product=${item.id}`
+              : `/`
+            }">
               <figure>
                 <img src="${getPbImageURL(item)}" alt="" />
               </figure>
@@ -119,6 +143,8 @@ class ProductList extends LitElement {
         }
         </ul>
       </div>
+
+      <a class="new-post" href="/src/pages/newPost/">+ 상품 추가</a>
     `;
   }
 }
